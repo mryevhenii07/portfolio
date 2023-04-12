@@ -20,10 +20,12 @@ import FigmaImg from '../assets/skills/figma.png';
 import SolidImg from '../assets/skills/solid.png';
 import Restapi from '../assets/skills/restapi.png';
 import WebpackImg from '../assets/skills/webpack.png';
+import BootstrapImg from '../assets/skills/bootstrap.png';
+import FormikImg from '../assets/skills/formik.png';
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 mt-1">
+    <div id="skills" className="w-full  p-2 mt-1">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">Skills</p>
         <h2 className="py-4">What I Can Do</h2>
@@ -75,6 +77,16 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>SASS</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={BootstrapImg} alt="img" width="94" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Bootstrap-react@4</h3>
               </div>
             </div>
           </div>
@@ -161,6 +173,16 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
+                <img src={FormikImg} alt="img" width="114" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Formik Yup</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
                 <img src={MaterialUiImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -221,7 +243,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={SolidImg} alt="img" width="154" height="64" />
+                <img src={SolidImg} alt="img" width="94" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>SOLID</h3>
