@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AboutImg from '../assets/about.jpg';
+import AboutImg from '../assets/iam.jpg';
 
 const About = () => {
   return (
@@ -20,11 +20,23 @@ const About = () => {
             Fascinated with how intricate programming can be I was quickly drawn to learn more. I
             started learning javascript and was even more enthused with making websites interactive.
             I then started freelancing . I am now spending my time building projects with React JS,
-            Firebase, Next.js and learning new technologies.
+            TypeScript, Firebase, Next.js and learning new technologies.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some of my latest projects.
-          </p>
+          {/* <Link href="/pdfview" className="py-2 text-gray-900 font-semibold underline "> */}
+          <div
+            style={{
+              color: 'black',
+              fontWeight: 'bold',
+              textDecoration: 'underline',
+              fontSize: '20px',
+              cursor: 'pointer',
+              marginLeft: '20px',
+              marginTop: '20px',
+            }}>
+            {' '}
+            Show my resume
+          </div>
+          {/* </Link> */}
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img src={AboutImg} alt="img" />

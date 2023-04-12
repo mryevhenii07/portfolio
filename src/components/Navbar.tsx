@@ -46,23 +46,17 @@ const NavBar = () => {
         <option value="ua">UA</option>
       </select> */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/* <Link to="/"> */}
-        <img src={Logo} alt="/" width="125" height="50" />
-        {/* </Link> */}
+        <Link to="/portfolio">
+          <img src={Logo} alt="/" width="125" height="50" />
+        </Link>
         <div>
           <ul className="hidden md:flex">
-            {/* <Link to="/"> */}
-            <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-              {/* {t.home} */}
-              Home
-            </li>
-            {/* </Link> */}
-            {/* <Link to="/#about"> */}
-            <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-              {/* {t.about} */}
-              About
-            </li>
-            {/* </Link> */}
+            <Link to="/portfolio">
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">Home</li>
+            </Link>
+            <a href="/#about">
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">About</li>
+            </a>
             {/* <Link to="/#skills"> */}
             <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
               {/* {t.skills} */}

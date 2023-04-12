@@ -1,0 +1,21 @@
+.wrapModal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ada3a3;
+   
+   
+}
+
+.wrapImg{
+    position: relative;
+   
+}
+.close{
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+}
+
