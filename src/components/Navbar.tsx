@@ -57,24 +57,24 @@ const NavBar = () => {
             <a href="/#about">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">About</li>
             </a>
-            {/* <Link to="/#skills"> */}
-            <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-              {/* {t.skills} */}
-              Skills
-            </li>
-            {/* </Link> */}
-            {/* <Link to="/#projects"> */}
-            <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-              {/* {t.projects} */}
-              Projects
-            </li>
-            {/* </Link> */}
-            {/* <Link to="/#contact"> */}
-            <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-              {/* {t.contact} */}
-              Contact
-            </li>
-            {/* </Link> */}
+            <a href="/#skills">
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.skills} */}
+                Skills
+              </li>
+            </a>
+            <a href="/#projects">
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.projects} */}
+                Projects
+              </li>
+            </a>
+            <a href="/#contact">
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.contact} */}
+                Contact
+              </li>
+            </a>
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />

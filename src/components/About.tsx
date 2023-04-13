@@ -23,7 +23,7 @@ const About = () => {
             TypeScript, Firebase, Next.js and learning new technologies.
           </p>
           {/* <Link href="/pdfview" className="py-2 text-gray-900 font-semibold underline "> */}
-          <div
+          {/* <div
             style={{
               color: 'black',
               fontWeight: 'bold',
@@ -35,7 +35,7 @@ const About = () => {
             }}>
             {' '}
             Show my resume
-          </div>
+          </div> */}
           {/* </Link> */}
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

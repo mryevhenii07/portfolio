@@ -9,8 +9,8 @@ const GitOnline = () => {
   return (
     <div className="w-full ">
       <div className="w-screen h-[30Vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
-        <img className="absolute" src={PropertyImg} alt="/" />
+      <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
+        <img className="absolute lg:h-[40vh]" src={PropertyImg} alt="/" />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">GitOnline</h2>
           <h3>My Own Project</h3>
@@ -59,7 +59,7 @@ const GitOnline = () => {
             </div>
           </div>
         </div>
-        <Link to="/#projects">
+        <Link to="/portfolio">
           <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>

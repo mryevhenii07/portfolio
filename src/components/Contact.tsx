@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
+import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Img from '../assets/contact.jpg';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
+  const TextOnlyTooltip = withStyles({
+    tooltip: {
+      color: 'white',
+      backgroundColor: 'blank',
+      height: '40px',
+      fontSize: '20px',
+      display: 'flex',
+      alignItems: 'center',
+    },
+  })(Tooltip);
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
@@ -39,25 +52,23 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
+                      <FaLinkedinIn size={24} />
                     </div>
                   </a>
                   <a href="https://github.com/mryevhenii07" target="_blank" rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
+                      <FaGithub size={24} />
                     </div>
                   </a>
 
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  {/* <Link href="/resume"> */}
-                  <a>
+                  <TextOnlyTooltip title="mrit.works07@gmail.com" arrow>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <AiOutlineMail size={24} />
                     </div>
-                  </a>
-                  {/* </Link> */}
+                  </TextOnlyTooltip>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaTelegram size={28} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -117,13 +128,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          {/* <Link href="/"> */}
-          <a>
+          <Link to="portfolio">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
-          </a>
-          {/* </Link> */}
+          </Link>
         </div>
       </div>
     </div>
