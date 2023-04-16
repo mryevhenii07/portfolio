@@ -1,5 +1,6 @@
 import React from 'react';
 
+import s from '../variabels/about.module.css';
 import AboutImg from '../assets/iam.jpg';
 
 const About = () => {
@@ -23,9 +24,23 @@ const About = () => {
             TypeScript, Firebase, Next.js and learning new technologies.
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img src={AboutImg} alt="img" />
+
+        <div className={s.container}>
+          <div className={s.box}>
+            <div className={s.imgBox}>
+              <img src={AboutImg} alt="img" />
+            </div>
+            <div className={s.content}>
+              <h4 className={s.name}>
+                Peredrii Yevhenii <br />
+                <span className={s.position}>Front-End Developer</span>
+              </h4>
+            </div>
+          </div>
         </div>
+        {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <img src={AboutImg} alt="img" />
+        </div> */}
       </div>
     </div>
   );
