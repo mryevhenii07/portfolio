@@ -22,21 +22,6 @@ const About = () => {
             I then started freelancing . I am now spending my time building projects with React JS,
             TypeScript, Firebase, Next.js and learning new technologies.
           </p>
-          {/* <Link href="/pdfview" className="py-2 text-gray-900 font-semibold underline "> */}
-          {/* <div
-            style={{
-              color: 'black',
-              fontWeight: 'bold',
-              textDecoration: 'underline',
-              fontSize: '20px',
-              cursor: 'pointer',
-              marginLeft: '20px',
-              marginTop: '20px',
-            }}>
-            {' '}
-            Show my resume
-          </div> */}
-          {/* </Link> */}
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img src={AboutImg} alt="img" />
