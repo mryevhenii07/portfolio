@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6f7a6edf.css",
-    "main.js": "/portfolio/static/js/main.ae0aaa7d.js",
+    "main.css": "/portfolio/static/css/main.87505ebf.css",
+    "main.js": "/portfolio/static/js/main.8888dd76.js",
     "static/media/icecreambg.png": "/portfolio/static/media/icecreambg.cf502cac1029186643b8.png",
     "static/media/gitonline.png": "/portfolio/static/media/gitonline.55b57df6b96d95b517e4.png",
     "static/media/pizzabg.png": "/portfolio/static/media/pizzabg.3805783bcabfcaffbdcf.png",
@@ -21,7 +21,6 @@
     "static/media/crypto.png": "/portfolio/static/media/crypto.43853e3bdbf2542bf298.png",
     "static/media/iam.jpg": "/portfolio/static/media/iam.3e8f622f02d6fdf5b8ab.jpg",
     "static/media/trello.png": "/portfolio/static/media/trello.b1eb0716fe16877c63c7.png",
-    "static/media/navLogo.png": "/portfolio/static/media/navLogo.f72062ae02f4cce1153b.png",
     "static/media/formik.png": "/portfolio/static/media/formik.f4c6f17e3bbb436235fb.png",
     "static/media/contact.jpg": "/portfolio/static/media/contact.6d13cc08960095d42376.jpg",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -34,11 +33,11 @@
     "static/media/github1.png": "/portfolio/static/media/github1.5b161304c2f1f68eadc8.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.6f7a6edf.css.map": "/portfolio/static/css/main.6f7a6edf.css.map",
-    "main.ae0aaa7d.js.map": "/portfolio/static/js/main.ae0aaa7d.js.map"
+    "main.87505ebf.css.map": "/portfolio/static/css/main.87505ebf.css.map",
+    "main.8888dd76.js.map": "/portfolio/static/js/main.8888dd76.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f7a6edf.css",
-    "static/js/main.ae0aaa7d.js"
+    "static/css/main.87505ebf.css",
+    "static/js/main.8888dd76.js"
   ]
 }
