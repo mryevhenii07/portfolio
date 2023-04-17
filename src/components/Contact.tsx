@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Img from '../assets/contact.jpg';
-import { Link } from 'react-router-dom';
 import Modal from './modal/modal';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = useState(true);
   const handleOpen = () => setOpen(false);
   const onClose = () => setOpen(true);
 
@@ -26,7 +25,7 @@ const Contact = () => {
     },
   })(Tooltip);
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="#contact" className="w-full lg:h-screen">
       {!open ? (
         <Modal onClose={onClose} />
       ) : (
@@ -74,8 +73,10 @@ const Contact = () => {
                         <AiOutlineMail size={24} />
                       </div>
                     </TextOnlyTooltip>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaTelegram size={28} onClick={handleOpen} />
+                    <div
+                      onClick={handleOpen}
+                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaTelegram size={28} />
                     </div>
                   </div>
                 </div>
@@ -127,21 +128,21 @@ const Contact = () => {
                     <label className="uppercase text-sm py-2">Message</label>
                     <textarea
                       className="border-2 rounded-lg p-3 border-gray-300"
-                      // rows="10"
                       name="message"></textarea>
                   </div>
+
                   <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
                 </form>
               </div>
             </div>
           </div>
-          <div className="flex justify-center py-12">
-            <a href="/#home">
+          {/* <div className="flex justify-center py-12">
+            <Link to="/portfolio">
               <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
               </div>
-            </a>
-          </div>
+            </Link>
+          </div> */}
         </div>
       )}
     </div>

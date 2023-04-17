@@ -1,9 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
-
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Home from './pages/home';
 import Wallet from './pages/wallet';
 import Pizza from './pages/pizza';
@@ -12,15 +11,10 @@ import GitOnline from './pages/gitonline';
 import EventParty from './pages/event';
 import Crypto from './pages/crypto';
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      <Navbar />
-      {/* <Main />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact /> */}
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/portfolio" element={<Home />} />
         <Route path="/wallet" element={<Wallet />} />
@@ -29,10 +23,9 @@ function App() {
         <Route path="/gitonline" element={<GitOnline />} />
         <Route path="/event" element={<EventParty />} />
         <Route path="/crypto" element={<Crypto />} />
-        {/* <Route path="/books" element={<BookList />} /> */}
       </Routes>
     </div>
   );
-}
+};
 
 export default App;

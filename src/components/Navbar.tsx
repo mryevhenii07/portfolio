@@ -41,10 +41,6 @@ const NavBar = () => {
 
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
-      {/* <select onChange={changeLanguage} defaultValue={locale}>
-        <option value="en">EN</option>
-        <option value="ua">UA</option>
-      </select> */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link to="/portfolio">
           <img src={Logo} alt="/" width="125" height="50" />
