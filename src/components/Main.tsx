@@ -7,7 +7,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaTelegram } from 'react-icons/fa';
 
 import Modal from './modal/modal';
-
+import s from '../variables/main.module.css';
 const TextOnlyTooltip = withStyles({
   tooltip: {
     color: 'white',
@@ -37,7 +37,11 @@ const Main = () => {
             <h1 className="py-4 text-gray-700">
               {t('mainHi')} <span className="text-[#5651e5]">{t('mainName')}</span>
             </h1>
-            <h2 className="py-2 text-gray-700">A Front-End Web Developer</h2>
+            <h2 className="py-2 text-gray-700"> A Front-End Developer</h2>
+            {/* <div className={s.title}>
+              A Front-End Web Developer <div className={s.alternate}>JavaScript</div>
+              <span className={s.span}>TypeScript</span>
+            </div> */}
             <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">{t('mainText')}</p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
               <a

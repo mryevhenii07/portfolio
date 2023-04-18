@@ -30,3 +30,10 @@ display: none;
     height: 35px;
     border-radius: 50%;
 }
+
+.wrap{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
