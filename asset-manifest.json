@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.343948b2.css",
-    "main.js": "/portfolio/static/js/main.964b9e21.js",
+    "main.css": "/portfolio/static/css/main.4a7aa5ab.css",
+    "main.js": "/portfolio/static/js/main.9d0459cc.js",
     "static/media/icecreambg.png": "/portfolio/static/media/icecreambg.cf502cac1029186643b8.png",
     "static/media/gitonline.png": "/portfolio/static/media/gitonline.55b57df6b96d95b517e4.png",
     "static/media/pizzabg.png": "/portfolio/static/media/pizzabg.3805783bcabfcaffbdcf.png",
@@ -24,6 +24,7 @@
     "static/media/formik.png": "/portfolio/static/media/formik.f4c6f17e3bbb436235fb.png",
     "static/media/contact.jpg": "/portfolio/static/media/contact.6d13cc08960095d42376.jpg",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/Logo-type.png": "/portfolio/static/media/Logo-type.3284b756122d961dbae7.png",
     "static/media/ua.jpg": "/portfolio/static/media/ua.4e9e616e675ee252f799.jpg",
     "static/media/solid.png": "/portfolio/static/media/solid.e9f91dd4edb721c00890.png",
     "static/media/figma.png": "/portfolio/static/media/figma.1b55d4c951fa3caf9908.png",
@@ -34,11 +35,11 @@
     "static/media/github1.png": "/portfolio/static/media/github1.5b161304c2f1f68eadc8.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.343948b2.css.map": "/portfolio/static/css/main.343948b2.css.map",
-    "main.964b9e21.js.map": "/portfolio/static/js/main.964b9e21.js.map"
+    "main.4a7aa5ab.css.map": "/portfolio/static/css/main.4a7aa5ab.css.map",
+    "main.9d0459cc.js.map": "/portfolio/static/js/main.9d0459cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.343948b2.css",
-    "static/js/main.964b9e21.js"
+    "static/css/main.4a7aa5ab.css",
+    "static/js/main.9d0459cc.js"
   ]
 }
