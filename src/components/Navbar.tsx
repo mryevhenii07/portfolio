@@ -1,12 +1,7 @@
-// import Image from 'next/image';
-// import Link from 'next/link';
-// import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import en from '../locales/en';
-// import ua from '../locales/ua';
 
 import Logo from '../assets/navLogo.png';
 import { Link } from 'react-router-dom';
@@ -15,15 +10,6 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
-  // const router = useRouter();
-  // const { locale } = router;
-  // const t = locale === 'en' ? en : ua;
-
-  // const changeLanguage = (e) => {
-  //   const locale = e.target.value;
-  //   console.log(locale);
-  //   router.push('/', '/', { locale: locale });
-  // };
   const handleNav = () => {
     setNav(!nav);
   };
@@ -61,13 +47,11 @@ const NavBar = () => {
             </a>
             <a href="/#projects">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-                {/* {t.projects} */}
                 Projects
               </li>
             </a>
             <a href="/#contact">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
-                {/* {t.contact} */}
                 Contact
               </li>
             </a>
@@ -86,9 +70,7 @@ const NavBar = () => {
           }>
           <div>
             <div className="flex w-full items-center justify-between">
-              {/* <Link to="/"> */}
               <img src={Logo} width="87" height="35" alt="/" />
-              {/* </Link> */}
 
               <div
                 onClick={handleNav}

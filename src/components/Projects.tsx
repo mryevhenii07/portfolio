@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import CryptoImg from '../public/assets/project/crypto.jpg';
 import SearchEvenImg from '../assets/project/search-even.png';
 import PizzaImg from '../assets/project/pizza.png';
 import IceImg from '../assets/project/ice.png';
