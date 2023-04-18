@@ -2,27 +2,19 @@ import React from 'react';
 
 import s from '../variables/about.module.css';
 import AboutImg from '../assets/iam.jpg';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">About</p>
-          <h2 className="py-4">Who I am</h2>
-          <p className="py-2 text-gray-600">I am developer</p>
-          <p className="py-2 text-gray-600">
-            I have spent the last 2 years in the freelance. I have always had a knack for technology
-            and working with computers. In 2020 I started working with HTML and CSS to make some
-            minor edits on a small project for my friend .What I thought was just a few small edits
-            turned into a love for programming.
-          </p>
-          <p className="py-2 text-gray-600">
-            Fascinated with how intricate programming can be I was quickly drawn to learn more. I
-            started learning javascript and was even more enthused with making websites interactive.
-            I then started freelancing . I am now spending my time building projects with React JS,
-            TypeScript, Firebase, Next.js and learning new technologies.
-          </p>
+          <p className="uppercase text-xl tracking-widest text-[#5651e5]">{t('about')}</p>
+          <h2 className="py-4">{t('aboutWho')}</h2>
+          <p className="py-2 text-gray-600">{t('aboutIAm')}</p>
+          <p className="py-2 text-gray-600">{t('aboutFirstDescription')}</p>
+          <p className="py-2 text-gray-600">{t('aboutSecondDescription')}</p>
         </div>
 
         <div className={s.container}>
@@ -32,7 +24,7 @@ const About = () => {
             </div>
             <div className={s.content}>
               <h4 className={s.name}>
-                Peredrii Yevhenii <br />
+                {t('aboutName')} <br />
                 <span className={s.position}>Front-End Developer</span>
               </h4>
             </div>

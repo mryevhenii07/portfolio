@@ -8,13 +8,15 @@ import CryptoImg from '../assets/project/crypto.png';
 import WalletImg from '../assets/project/wallet.png';
 
 import ProjectItem from './ProjectItem';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <div id="projects" className="w-full ">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5">Projects</p>
-        <h2 className="py-4">What I Built</h2>
+        <p className="text-xl tracking-widest uppercase text-[#5651e5">{t('project')}</p>
+        <h2 className="py-4">{t('projectBuild')}</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem title="Wallet App" backgroundImg={WalletImg} projectUrl="/wallet" />
           <ProjectItem title="Git Online" backgroundImg={GitonlineImg} projectUrl="/gitonline" />

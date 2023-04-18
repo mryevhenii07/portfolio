@@ -1,5 +1,7 @@
 import React from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
+import { useTranslation } from 'react-i18next';
+
 import { withStyles } from '@material-ui/core/styles';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaTelegram } from 'react-icons/fa';
@@ -22,6 +24,8 @@ const Main = () => {
   const handleOpen = () => setOpen(false);
   const onClose = () => setOpen(true);
 
+  const { t } = useTranslation();
+
   return (
     <div id="home" className="w-full h-screen text-center relative">
       {!open ? (
@@ -29,17 +33,12 @@ const Main = () => {
       ) : (
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div>
-            <p className="uppercase text-sm tracking-widest text-gray-600">
-              LETS BUILD SOMETHING TOGETHER
-            </p>
+            <p className="uppercase text-sm tracking-widest text-gray-600">{t('build')}</p>
             <h1 className="py-4 text-gray-700">
-              Hi, Im <span className="text-[#5651e5]">Yevhenii</span>
+              {t('mainHi')} <span className="text-[#5651e5]">{t('mainName')}</span>
             </h1>
             <h2 className="py-2 text-gray-700">A Front-End Web Developer</h2>
-            <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
-              I’m focused on building responsive front-end web applications while learning back-end
-              technologiess.
-            </p>
+            <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">{t('mainText')}</p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
               <a
                 href="https://www.linkedin.com/in/yevhenii-peredrii-a069a7223/"

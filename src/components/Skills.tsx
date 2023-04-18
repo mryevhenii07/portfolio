@@ -1,4 +1,5 @@
-import React from 'react';
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import HtmlImg from '../assets/skills/html.png';
 import CssImg from '../assets/skills/css.png';
@@ -23,12 +24,13 @@ import WebpackImg from '../assets/skills/webpack.png';
 import BootstrapImg from '../assets/skills/bootstrap.png';
 import FormikImg from '../assets/skills/formik.png';
 
-const Skills = () => {
+const Skills: FC = () => {
+  const { t } = useTranslation();
   return (
     <div id="skills" className="w-full  p-2 mt-1">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">Skills</p>
-        <h2 className="py-4">What I Can Do</h2>
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">{t('skills')}</p>
+        <h2 className="py-4">{t('skillsDo')}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
