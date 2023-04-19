@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba4bcc4a.css",
-    "main.js": "/portfolio/static/js/main.86332e13.js",
+    "main.css": "/portfolio/static/css/main.545e2721.css",
+    "main.js": "/portfolio/static/js/main.b6c2508e.js",
     "static/media/icecreambg.png": "/portfolio/static/media/icecreambg.cf502cac1029186643b8.png",
     "static/media/gitonline.png": "/portfolio/static/media/gitonline.55b57df6b96d95b517e4.png",
     "static/media/pizzabg.png": "/portfolio/static/media/pizzabg.3805783bcabfcaffbdcf.png",
@@ -25,7 +25,6 @@
     "static/media/formik.png": "/portfolio/static/media/formik.f4c6f17e3bbb436235fb.png",
     "static/media/contact.jpg": "/portfolio/static/media/contact.6d13cc08960095d42376.jpg",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/Logo-type.png": "/portfolio/static/media/Logo-type.3284b756122d961dbae7.png",
     "static/media/ua.jpg": "/portfolio/static/media/ua.4e9e616e675ee252f799.jpg",
     "static/media/solid.png": "/portfolio/static/media/solid.e9f91dd4edb721c00890.png",
     "static/media/Facebook.png": "/portfolio/static/media/Facebook.35c3621a2a0297c6e912.png",
@@ -38,11 +37,11 @@
     "static/media/twit.png": "/portfolio/static/media/twit.f5493e34d4a7ffcfee67.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.ba4bcc4a.css.map": "/portfolio/static/css/main.ba4bcc4a.css.map",
-    "main.86332e13.js.map": "/portfolio/static/js/main.86332e13.js.map"
+    "main.545e2721.css.map": "/portfolio/static/css/main.545e2721.css.map",
+    "main.b6c2508e.js.map": "/portfolio/static/js/main.b6c2508e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba4bcc4a.css",
-    "static/js/main.86332e13.js"
+    "static/css/main.545e2721.css",
+    "static/js/main.b6c2508e.js"
   ]
 }
