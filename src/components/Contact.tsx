@@ -52,7 +52,7 @@ const Contact = () => {
                   <p className="py-4">{t('contactFullNameDescription')}</p>
                 </div>
                 <div>
-                  <p className="uppercase pt-8">{t('contactWithMe')}</p>
+                  <p className="uppercase pt-8 text-[#5651e5]">{t('contactWithMe')}</p>
                   <div className="flex items-center justify-between py-4">
                     <a
                       href="https://www.linkedin.com/in/yevhenii-peredrii-a069a7223/"
@@ -138,13 +138,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex justify-center py-12">
-            <Link to="/portfolio">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
-              </div>
-            </Link>
-          </div> */}
         </div>
       )}
     </div>

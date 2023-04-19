@@ -6,9 +6,11 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/Logo-type.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import s from '../variables/navbar.module.css';
+
 import UaImg from '../assets/ua.jpg';
 import UkImg from '../assets/uk.jpg';
+
+import s from '../variables/navbar.module.css';
 
 const NavBar = () => {
   // const [nav, setNav] = useState(false);
@@ -36,9 +38,22 @@ const NavBar = () => {
     <div className={shadow ? 'fixed w-full h-30 shadow-xl z-[100]' : 'fixed w-full h-30 z-[100]'}>
       <div className={s.wrap}>
         {' '}
-        <Link to="/portfolio">
+        {/* <Link to="/portfolio">
           <img src={Logo} alt="/" width="95" />
-        </Link>
+        </Link> */}
+        <div className={s.container}>
+          <section className={s.animation}>
+            <div className={s.first}>
+              <div> TypeScript</div>
+            </div>
+            <div className={s.second}>
+              <div>JavaScript</div>
+            </div>
+            <div className={s.first}>
+              <div>Next.js</div>
+            </div>
+          </section>
+        </div>
         <div className={s.wrapperBtn}>
           <img src={UkImg} className={s.img} alt="img" onClick={() => changeLanguage('en')} />
           <img src={UaImg} alt="img" onClick={() => changeLanguage('uk')} className={s.img} />

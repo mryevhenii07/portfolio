@@ -39,14 +39,12 @@ const Main = () => {
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div>
             <p className="uppercase text-sm tracking-widest text-gray-600">{t('build')}</p>
+
             <h1 className="py-4 text-gray-700">
               {t('mainHi')} <span className="text-[#5651e5]">{t('mainName')}</span>
             </h1>
             <h2 className="py-2 text-gray-700">A Front-End Developer</h2>
-            {/* <div className={s.title}>
-              A Front-End Web Developer <div className={s.alternate}>JavaScript</div>
-              <span className={s.span}>TypeScript</span>
-            </div> */}
+
             <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">{t('mainText')}</p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
               <a
