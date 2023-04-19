@@ -26,10 +26,6 @@ const About: FC = () => {
               <img src={AboutImg} alt="img" />
             </div>
             <div className={s.content}>
-              {/* <h4 className={s.name}>
-                {t('aboutName')}qq <br />
-                <span className={s.position}>Front-End Developer</span>
-              </h4> */}
               <a href="https://www.instagram.com/mr_yevhenii_007/">
                 <img src={FacebookImg} alt="facebook" width={25} height={25} />
               </a>

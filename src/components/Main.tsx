@@ -8,6 +8,8 @@ import { FaLinkedinIn, FaGithub, FaTelegram } from 'react-icons/fa';
 
 import Modal from './modal/modal';
 import s from '../variables/main.module.css';
+
+import styled from 'styled-components';
 const TextOnlyTooltip = withStyles({
   tooltip: {
     color: 'white',
@@ -19,6 +21,9 @@ const TextOnlyTooltip = withStyles({
   },
 })(Tooltip);
 
+const StyledText = styled.div`
+  color: ${(props) => props.theme.colors.danger};
+`;
 const Main = () => {
   const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(false);
@@ -37,7 +42,7 @@ const Main = () => {
             <h1 className="py-4 text-gray-700">
               {t('mainHi')} <span className="text-[#5651e5]">{t('mainName')}</span>
             </h1>
-            <h2 className="py-2 text-gray-700"> A Front-End Developer</h2>
+            <h2 className="py-2 text-gray-700">A Front-End Developer</h2>
             {/* <div className={s.title}>
               A Front-End Web Developer <div className={s.alternate}>JavaScript</div>
               <span className={s.span}>TypeScript</span>

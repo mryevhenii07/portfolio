@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import s from '../variables/navbar.module.css';
 import UaImg from '../assets/ua.jpg';
 import UkImg from '../assets/uk.jpg';
+
 const NavBar = () => {
   // const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);

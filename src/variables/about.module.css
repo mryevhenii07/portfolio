@@ -18,14 +18,14 @@
 }
 
 .container .box:hover .content{
-    transform: translate(0 ,270px );
+    transform: translate(0 ,300px );
     
 }
 
 .content{
     display: flex;
     justify-content: center;
-    width: 250px;
+    width: 270px;
     /* background-color: red; */
 }
 .content img{
@@ -36,16 +36,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     z-index: 2;
     transition: all 0.5s ease-in-out;
 
 }
 
 .imgBox img{
-    width: 320px;
-    height: 320px;
+    width: 353px;
+    height: 350px;
     object-fit: cover;
     resize: both;
     border-radius: 8px;
