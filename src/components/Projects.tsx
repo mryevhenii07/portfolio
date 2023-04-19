@@ -18,12 +18,36 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651e5">{t('project')}</p>
         <h2 className="py-4">{t('projectBuild')}</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem title="Wallet App" backgroundImg={WalletImg} projectUrl="/wallet" />
-          <ProjectItem title="Git Online" backgroundImg={GitonlineImg} projectUrl="/gitonline" />
-          <ProjectItem title="Search Event" backgroundImg={SearchEvenImg} projectUrl="/event" />
-          <ProjectItem title="Crypto App" backgroundImg={CryptoImg} projectUrl="/crypto" />
-          <ProjectItem title="Pizza King" backgroundImg={PizzaImg} projectUrl="/pizza" />
-          <ProjectItem title="Ice Cream" backgroundImg={IceImg} projectUrl="/icecream" />
+          <ProjectItem
+            title={t('projectsWalletApp')}
+            backgroundImg={WalletImg}
+            projectUrl="/wallet"
+          />
+          <ProjectItem
+            title={t('projectsGidOnline')}
+            backgroundImg={GitonlineImg}
+            projectUrl="/gitonline"
+          />
+          <ProjectItem
+            title={t('projectsSearchEvent')}
+            backgroundImg={SearchEvenImg}
+            projectUrl="/event"
+          />
+          <ProjectItem
+            title={t('projectsCryptoApp')}
+            backgroundImg={CryptoImg}
+            projectUrl="/crypto"
+          />
+          <ProjectItem
+            title={t('projectsPizzaKing')}
+            backgroundImg={PizzaImg}
+            projectUrl="/pizza"
+          />
+          <ProjectItem
+            title={t('projectsIceCream')}
+            backgroundImg={IceImg}
+            projectUrl="/icecream"
+          />
         </div>
       </div>
     </div>

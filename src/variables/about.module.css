@@ -18,11 +18,20 @@
 }
 
 .container .box:hover .content{
-    transform: translate(56px ,264px );
-    /* background-color: #fff; */
+    transform: translate(0 ,270px );
     
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    /* background-color: red; */
+}
+.content img{
+    margin-left: 10px;
+    cursor: pointer;
+}
 .imgBox{
     position: absolute;
     top: 0;
@@ -41,9 +50,9 @@
     resize: both;
     border-radius: 8px;
 }
-.name{
+/* .name{
     font-size: 18px;
 }
 .position{
     font-size: 12px;
-}
+} */

@@ -1,10 +1,13 @@
-import React from 'react';
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import s from '../variables/about.module.css';
 import AboutImg from '../assets/iam.jpg';
-import { useTranslation } from 'react-i18next';
+import InstagrammImg from '../assets/Instagram.png';
+import FacebookImg from '../assets/Facebook.png';
+import TwiterImg from '../assets/twit.png';
 
-const About = () => {
+const About: FC = () => {
   const { t } = useTranslation();
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -23,10 +26,20 @@ const About = () => {
               <img src={AboutImg} alt="img" />
             </div>
             <div className={s.content}>
-              <h4 className={s.name}>
-                {t('aboutName')} <br />
+              {/* <h4 className={s.name}>
+                {t('aboutName')}qq <br />
                 <span className={s.position}>Front-End Developer</span>
-              </h4>
+              </h4> */}
+              <a href="https://www.instagram.com/mr_yevhenii_007/">
+                <img src={FacebookImg} alt="facebook" width={25} height={25} />
+              </a>
+              <a href="https://www.instagram.com/mr_yevhenii_007/">
+                <img src={InstagrammImg} alt="Instagramm" width={25} height={25} />
+              </a>
+
+              <a href="https://www.instagram.com/mr_yevhenii_007/">
+                <img src={TwiterImg} alt="twiter" width={25} height={25} />
+              </a>
             </div>
           </div>
         </div>
