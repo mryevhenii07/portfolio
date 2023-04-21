@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Img from '../assets/contact.jpg';
-import Modal from './modal/modal';
+import Modal from './modal/modalTelegram/modal';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

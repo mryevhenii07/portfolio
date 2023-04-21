@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import SearchEvenImg from '../assets/project/search-even.png';
 import PizzaImg from '../assets/project/pizza.png';
@@ -6,9 +7,7 @@ import IceImg from '../assets/project/ice.png';
 import GitonlineImg from '../assets/project/gitonline.png';
 import CryptoImg from '../assets/project/crypto.png';
 import WalletImg from '../assets/project/wallet.png';
-
 import ProjectItem from './ProjectItem';
-import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -24,11 +23,6 @@ const Projects = () => {
             projectUrl="/wallet"
           />
           <ProjectItem
-            title={t('projectsGidOnline')}
-            backgroundImg={GitonlineImg}
-            projectUrl="/gitonline"
-          />
-          <ProjectItem
             title={t('projectsSearchEvent')}
             backgroundImg={SearchEvenImg}
             projectUrl="/event"
@@ -39,14 +33,19 @@ const Projects = () => {
             projectUrl="/crypto"
           />
           <ProjectItem
+            title={t('projectsIceCream')}
+            backgroundImg={IceImg}
+            projectUrl="/icecream"
+          />
+          <ProjectItem
             title={t('projectsPizzaKing')}
             backgroundImg={PizzaImg}
             projectUrl="/pizza"
           />
           <ProjectItem
-            title={t('projectsIceCream')}
-            backgroundImg={IceImg}
-            projectUrl="/icecream"
+            title={t('projectsGidOnline')}
+            backgroundImg={GitonlineImg}
+            projectUrl="/gitonline"
           />
         </div>
       </div>

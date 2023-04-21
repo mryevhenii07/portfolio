@@ -1,0 +1,32 @@
+.box{position: relative;
+    /* position: 'absolute' as 'absolute',*/
+   
+    transform: translate(-50%, -50%);
+     top: 50%;
+    left: 50%;
+padding: 35px 0  35px 10px;
+    width: 335px;
+    height: 100px;
+    background-color: #fff;
+    border:none;
+    outline: none;
+}
+
+.email{
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.copy{
+    position: absolute;
+    top: 35px;
+    right: 16px;
+    cursor: pointer;
+    
+}
+
+.copied{
+    font-size: 14px;
+    color: #5651e5;
+}

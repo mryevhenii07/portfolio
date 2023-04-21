@@ -10,6 +10,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        modalEmail: 'The text is copied to the clipboard.',
         build: 'LETS BUILD SOMETHING TOGETHER',
         mainText:
           'I’m focused on building responsive front-end web applications while learning back-end technologiess.',
@@ -66,8 +67,9 @@ i18n.use(initReactI18next).init({
           '   This is my own project, in this project I used dependencies: axios, dompurify, firebase,gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines anddevDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier andtailwindcss.For them install used npm. Starting of the project-CREATE REACT APP.',
       },
     },
-    uk: {
+    ua: {
       translation: {
+        modalEmail: 'Текст скопійовано в буфер обміну',
         build: 'ДАВАЙТЕ ЩОСЬ СТВОРЮВАТИ РАЗОМ',
         mainText:
           'Я зосереджений на створенні адаптивних зовнішніх веб-додатків, одночасно вивчаючи серверні технології.',
@@ -111,7 +113,7 @@ i18n.use(initReactI18next).init({
         pagesTechnologies: 'Технології',
         pagesProject: 'Проект',
         pagesDescriptionWallet:
-          'Це командний проект, зроблений переклад сторінки та розділ перевірки форми, у цьому проекті я використовував залежності: i18next, react, react-dom, react-icons, react-router-dom, react-sparklines і devDependencies: autoprefixer, eslint, husky , lint-staged, postcss, prettier і . Для їх інсталяції використовувався npm. Початок проекту CREATE REACT APP.',
+          'Це командний проект, зроблений переклад сторінки та розділ валідації форми, у цьому проекті я використовував залежності: i18next, react, react-dom, react-icons, react-router-dom react-sparklines і devDependencies: autoprefixer, eslint, husky , lint-staged, postcss, prettier і . Для їх інсталяції використовувався npm. Початок проекту CREATE REACT APP.',
         pagesDescriptionPizza:
           'Це мій власний проект, у якому я використовував залежності:redux-toolkit,animalCss,SASS react-pagination, react-skeleton, axios, gh-pages, react, react-dom, react-icons,react-router-dom і devDependencies: autoprefixer, eslint, husky, lint-staged, postcss,красивіше. Для них встановіть використаний npm. Початок проекту CREATE REACT APP.',
         pagesDescriptionGidOnline:
@@ -119,7 +121,7 @@ i18n.use(initReactI18next).init({
         pagesDescriptionEvent:
           'Це командний проект, я зробив розмітку сторінок і нижній колонтитул, які використовував у цьому проектізалежності: SCSS, react і devЗалежності: autoprefixer, eslint, husky,lint-staged, postcss, prettier і . Для їх встановлення використовувався npm. Починаючи зproject-CREATE REACT APP.',
         pagesDescriptionIceCream:
-          'Це командний проект, я був керівником команди, відповідальним за організацію та створення проектуGidHub, підключення шрифтів, створення бібліотек Parcel, участь у всіх розробках блоків  , в цьому проекті я використовував залежності: HTML, SASS.',
+          'Це командний проект, я був керівником команди, відповідальним за організацію та створення проекту GidHub, підключення шрифтів, створення бібліотек Parcel, участь у всіх розробках блоків  , в цьому проекті я використовував залежності: HTML, SASS.',
         pagesDescriptionCrypto:
           'Це мій власний проект, у якому я використовував залежності: axios, dompurify, firebase,gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines та devDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier іtailwindcss. Для них інсталюйте використаний npm. Початок проекту CREATE REACT APP.',
       },

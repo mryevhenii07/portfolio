@@ -2,23 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-
-import Logo from '../assets/Logo-type.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import UaImg from '../assets/ua.jpg';
 import UkImg from '../assets/uk.jpg';
-
 import s from '../variables/navbar.module.css';
 
 const NavBar = () => {
-  // const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-
-  // const handleNav = () => {
-  //   setNav(!nav);
-  // };
+  const { i18n } = useTranslation();
+  const activeButton = i18n.language;
 
   useEffect(() => {
     const handleShadow = () => {
@@ -30,33 +24,40 @@ const NavBar = () => {
     };
     window.addEventListener('scroll', handleShadow);
   }, []);
-  const { i18n } = useTranslation();
+
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+
   return (
     <div className={shadow ? 'fixed w-full h-30 shadow-xl z-[100]' : 'fixed w-full h-30 z-[100]'}>
       <div className={s.wrap}>
-        {' '}
-        {/* <Link to="/portfolio">
-          <img src={Logo} alt="/" width="95" />
-        </Link> */}
         <div className={s.container}>
           <section className={s.animation}>
             <div className={s.first}>
               <div> TypeScript</div>
+            </div>{' '}
+            <div className={s.first}>
+              <div>Next.js</div>
             </div>
             <div className={s.second}>
               <div>JavaScript</div>
             </div>
-            <div className={s.first}>
-              <div>Next.js</div>
-            </div>
           </section>
         </div>
         <div className={s.wrapperBtn}>
-          <img src={UkImg} className={s.img} alt="img" onClick={() => changeLanguage('en')} />
-          <img src={UaImg} alt="img" onClick={() => changeLanguage('uk')} className={s.img} />
+          <img
+            src={UkImg}
+            className={activeButton === 'en' ? `${s.activeButton}` : `${s.img}`}
+            alt="img"
+            onClick={() => changeLanguage('en')}
+          />
+          <img
+            src={UaImg}
+            alt="img"
+            onClick={() => changeLanguage('ua')}
+            className={activeButton === 'ua' ? `${s.activeButton}` : `${s.img}`}
+          />
         </div>
       </div>
     </div>

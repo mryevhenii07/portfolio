@@ -7,10 +7,9 @@
 }
 
 .container .box{
-    /* position: relative; */
     width: 320px;
     height: 320px;
-    /* margin: 48px; */
+    
 }
 
 .container .box:hover .imgBox{
@@ -26,18 +25,17 @@
     display: flex;
     justify-content: center;
     width: 270px;
-    /* background-color: red; */
 }
+
 .content img{
     margin-left: 10px;
     cursor: pointer;
 }
+
 .imgBox{
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100%; */
-    /* height: 100%; */
     z-index: 2;
     transition: all 0.5s ease-in-out;
 

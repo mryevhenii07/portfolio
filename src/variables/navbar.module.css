@@ -9,6 +9,15 @@ display: none;
     border-radius: 50%;
     cursor: pointer;
 }
+.activeButton{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .img:last-child{
     margin-left: 10px;
 }
@@ -20,16 +29,11 @@ display: none;
 
 .wrapperBtn{
     padding: 20px;
-    width: 100%;
+    width: 100px;
     display: flex;
-    justify-content: end;
 }
 
-.active{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
+
 
 .wrap{
     padding: 0 20px;
@@ -38,7 +42,6 @@ display: none;
     align-items: center;
     
 }
-
 
 .iAm{
     color: rgb(75 85 99 / var(--tw-text-opacity));
