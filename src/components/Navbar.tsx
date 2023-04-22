@@ -14,6 +14,12 @@ const NavBar = () => {
   const { i18n } = useTranslation();
   const activeButton = i18n.language;
 
+  const [choose, setChoose] = useState(false);
+
+  const handleChoose = () => {
+    setChoose(!choose);
+  };
+
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -45,19 +51,12 @@ const NavBar = () => {
             </div>
           </section>
         </div>
-        <div className={s.wrapperBtn}>
-          <img
-            src={UkImg}
-            className={activeButton === 'en' ? `${s.activeButton}` : `${s.img}`}
-            alt="img"
-            onClick={() => changeLanguage('en')}
-          />
-          <img
-            src={UaImg}
-            alt="img"
-            onClick={() => changeLanguage('ua')}
-            className={activeButton === 'ua' ? `${s.activeButton}` : `${s.img}`}
-          />
+        <div className={s.wrapperBtn} onClick={handleChoose}>
+          {choose ? (
+            <img src={UkImg} className={s.img} alt="img" onClick={() => changeLanguage('en')} />
+          ) : (
+            <img src={UaImg} alt="img" onClick={() => changeLanguage('ua')} className={s.img} />
+          )}
         </div>
       </div>
     </div>

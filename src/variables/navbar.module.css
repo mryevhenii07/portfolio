@@ -9,15 +9,15 @@ display: none;
     border-radius: 50%;
     cursor: pointer;
 }
-.activeButton{
+/* .activeButton{
     width: 28px;
     height: 28px;
     border-radius: 50%;
     cursor: pointer;
-    /* border: 1px solid red; */
+     border: 1px solid red; 
     margin-left: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 .img:last-child{
     margin-left: 10px;
 }
@@ -27,11 +27,13 @@ display: none;
 
 }
 
-.wrapperBtn{
+/* .wrapperBtn{
     padding: 20px;
-    width: 100px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
     display: flex;
-}
+} */
 
 
 
@@ -109,16 +111,3 @@ display: none;
     90% {margin-top: 0;}
     100% {margin-top: 0;}
   }
-  /* @keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -90px;}
-    30% {margin-top: -90px;}
-    40% {margin-top: -11.24rem;}
-    60% {margin-top: -11.24rem;}
-    70% {margin-top: -5.62rem;}
-    80% {margin-top: -5.62rem;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-  } */
-  

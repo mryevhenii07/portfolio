@@ -23,6 +23,7 @@ import Restapi from '../assets/skills/restapi.png';
 import WebpackImg from '../assets/skills/webpack.png';
 import BootstrapImg from '../assets/skills/bootstrap.png';
 import FormikImg from '../assets/skills/formik.png';
+import ViteImg from '../assets/skills/Vitejs.png';
 
 const Skills: FC = () => {
   const { t } = useTranslation();
@@ -199,6 +200,16 @@ const Skills: FC = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Webpack</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={ViteImg} alt="img" width="60" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Vite</h3>
               </div>
             </div>
           </div>
