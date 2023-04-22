@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f387bc15.css",
-    "main.js": "/portfolio/static/js/main.4af0b08d.js",
+    "main.css": "/portfolio/static/css/main.549c124c.css",
+    "main.js": "/portfolio/static/js/main.efd25fa9.js",
     "static/media/icecreambg.png": "/portfolio/static/media/icecreambg.cf502cac1029186643b8.png",
     "static/media/gitonline.png": "/portfolio/static/media/gitonline.55b57df6b96d95b517e4.png",
     "static/media/pizzabg.png": "/portfolio/static/media/pizzabg.3805783bcabfcaffbdcf.png",
@@ -17,9 +17,11 @@
     "static/media/Instagram.png": "/portfolio/static/media/Instagram.abced1a115ac65261348.png",
     "static/media/walletbg.png": "/portfolio/static/media/walletbg.99714d9be97845be746a.png",
     "static/media/webpack.png": "/portfolio/static/media/webpack.0539025f373b8ee4ba29.png",
+    "static/media/uk.jpg": "/portfolio/static/media/uk.1795214514f54a4df2b4.jpg",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.bebbcf0ba38201725b06.png",
     "static/media/telegram-img.jpg": "/portfolio/static/media/telegram-img.71d3961391498de55069.jpg",
     "static/media/crypto.png": "/portfolio/static/media/crypto.43853e3bdbf2542bf298.png",
+    "static/media/Vitejs.png": "/portfolio/static/media/Vitejs.4868887c811f999cdcb3.png",
     "static/media/iam.jpg": "/portfolio/static/media/iam.3e8f622f02d6fdf5b8ab.jpg",
     "static/media/trello.png": "/portfolio/static/media/trello.b1eb0716fe16877c63c7.png",
     "static/media/formik.png": "/portfolio/static/media/formik.f4c6f17e3bbb436235fb.png",
@@ -37,11 +39,11 @@
     "static/media/twit.png": "/portfolio/static/media/twit.f5493e34d4a7ffcfee67.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.f387bc15.css.map": "/portfolio/static/css/main.f387bc15.css.map",
-    "main.4af0b08d.js.map": "/portfolio/static/js/main.4af0b08d.js.map"
+    "main.549c124c.css.map": "/portfolio/static/css/main.549c124c.css.map",
+    "main.efd25fa9.js.map": "/portfolio/static/js/main.efd25fa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f387bc15.css",
-    "static/js/main.4af0b08d.js"
+    "static/css/main.549c124c.css",
+    "static/js/main.efd25fa9.js"
   ]
 }
