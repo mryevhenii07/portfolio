@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.549c124c.css",
-    "main.js": "/portfolio/static/js/main.efd25fa9.js",
+    "main.css": "/portfolio/static/css/main.08294a0f.css",
+    "main.js": "/portfolio/static/js/main.d47b6589.js",
     "static/media/icecreambg.png": "/portfolio/static/media/icecreambg.cf502cac1029186643b8.png",
     "static/media/gitonline.png": "/portfolio/static/media/gitonline.55b57df6b96d95b517e4.png",
     "static/media/pizzabg.png": "/portfolio/static/media/pizzabg.3805783bcabfcaffbdcf.png",
@@ -14,6 +14,7 @@
     "static/media/wallet.png": "/portfolio/static/media/wallet.e6d3e09b962e2bb5330a.png",
     "static/media/ice.png": "/portfolio/static/media/ice.398e5e0c3eb1a173de3f.png",
     "static/media/styledcomponents.png": "/portfolio/static/media/styledcomponents.0fefccb0a398bba44766.png",
+    "static/media/popup-1.jpg": "/portfolio/static/media/popup-1.fdc3dba72bafb9821e5b.jpg",
     "static/media/Instagram.png": "/portfolio/static/media/Instagram.abced1a115ac65261348.png",
     "static/media/walletbg.png": "/portfolio/static/media/walletbg.99714d9be97845be746a.png",
     "static/media/webpack.png": "/portfolio/static/media/webpack.0539025f373b8ee4ba29.png",
@@ -39,11 +40,11 @@
     "static/media/twit.png": "/portfolio/static/media/twit.f5493e34d4a7ffcfee67.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.549c124c.css.map": "/portfolio/static/css/main.549c124c.css.map",
-    "main.efd25fa9.js.map": "/portfolio/static/js/main.efd25fa9.js.map"
+    "main.08294a0f.css.map": "/portfolio/static/css/main.08294a0f.css.map",
+    "main.d47b6589.js.map": "/portfolio/static/js/main.d47b6589.js.map"
   },
   "entrypoints": [
-    "static/css/main.549c124c.css",
-    "static/js/main.efd25fa9.js"
+    "static/css/main.08294a0f.css",
+    "static/js/main.d47b6589.js"
   ]
 }
