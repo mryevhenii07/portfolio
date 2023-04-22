@@ -11,18 +11,6 @@ import { useTranslation } from 'react-i18next';
 import s from './modalEmail.module.css';
 import { AiOutlineMail } from 'react-icons/ai';
 
-const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 335,
-  height: 100,
-  bgcolor: 'background.paper',
-  // boxShadow: 24,
-  p: 4,
-};
-
 const ModalEmail = () => {
   const { t } = useTranslation();
 
@@ -42,11 +30,10 @@ const ModalEmail = () => {
 
   return (
     <div>
-      {/* <Button onClick={handleOpen}>Open modal</Button> */}
       <div
         onClick={handleOpen}
         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-        <AiOutlineMail size={24} />
+        <AiOutlineMail size={20} />
       </div>
       <Modal
         open={open}

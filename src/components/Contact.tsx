@@ -1,32 +1,20 @@
-import { useState } from 'react';
-import Tooltip from '@material-ui/core/Tooltip';
-import { withStyles } from '@material-ui/core/styles';
+import { useState, FC } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Img from '../assets/contact.jpg';
 import Modal from './modal/modalTelegram/modal';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ModalEmail from './modal/modalEmail/modalEmail';
 
-const Contact = () => {
+const Contact: FC = () => {
   const [open, setOpen] = useState(true);
   const handleOpen = () => setOpen(false);
   const onClose = () => setOpen(true);
 
   const { t } = useTranslation();
 
-  const TextOnlyTooltip = withStyles({
-    tooltip: {
-      color: 'white',
-      backgroundColor: 'blank',
-      height: '40px',
-      fontSize: '20px',
-      display: 'flex',
-      alignItems: 'center',
-    },
-  })(Tooltip);
   return (
     <div id="#contact" className="w-full lg:h-screen">
       {!open ? (
@@ -67,12 +55,7 @@ const Contact = () => {
                         <FaGithub size={24} />
                       </div>
                     </a>
-
-                    <TextOnlyTooltip title="mrit.works07@gmail.com" arrow>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <AiOutlineMail size={24} />
-                      </div>
-                    </TextOnlyTooltip>
+                    <ModalEmail />
                     <div
                       onClick={handleOpen}
                       className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
