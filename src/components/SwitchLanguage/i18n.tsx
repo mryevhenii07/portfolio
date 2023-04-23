@@ -11,6 +11,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         modalEmail: 'The text is copied to the clipboard.',
+        scrollUp: 'Go to top',
         build: 'LETS BUILD SOMETHING TOGETHER',
         mainText:
           'I’m focused on building responsive front-end web applications while learning back-end technologiess.',
@@ -70,6 +71,7 @@ i18n.use(initReactI18next).init({
     ua: {
       translation: {
         modalEmail: 'Текст скопійовано в буфер обміну',
+        scrollUp: 'Перейти вгору',
         build: 'ДАВАЙТЕ ЩОСЬ СТВОРЮВАТИ РАЗОМ',
         mainText:
           'Я зосереджений на створенні адаптивних зовнішніх веб-додатків, одночасно вивчаючи серверні технології.',

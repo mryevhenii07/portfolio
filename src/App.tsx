@@ -12,6 +12,7 @@ import GitOnline from './pages/gitonline';
 import EventParty from './pages/event';
 import Crypto from './pages/crypto';
 import Popup from './components/popup/Popup';
+import ScrollButton from './ScrollButton/ScrollButton';
 
 const App: FC = () => {
   const [popup, setPopup] = useState(false);
@@ -20,7 +21,7 @@ const App: FC = () => {
     const handlePopup = () => {
       setTimeout(() => {
         setPopup(true);
-      }, 10000);
+      }, 8000);
     };
     handlePopup();
   }, []);
@@ -42,6 +43,7 @@ const App: FC = () => {
         <Route path="/event" element={<EventParty />} />
         <Route path="/crypto" element={<Crypto />} />
       </Routes>
+      <ScrollButton />
     </div>
   );
 };
