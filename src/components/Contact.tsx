@@ -7,6 +7,7 @@ import Img from '../assets/contact.jpg';
 import Modal from './modal/modalTelegram/modal';
 import { useTranslation } from 'react-i18next';
 import ModalEmail from './modal/modalEmail/modalEmail';
+import styled from 'styled-components';
 
 const Contact: FC = () => {
   const [open, setOpen] = useState(true);
@@ -22,7 +23,7 @@ const Contact: FC = () => {
       ) : (
         <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
           <p className="text-xl tracking-widest uppercase text-[#5651e5]">{t('contact')}</p>
-          <h2 className="py-4">{t('contactGet')}</h2>
+          <TextColorH2 className="py-4">{t('contactGet')}</TextColorH2>
           <div className="grid lg:grid-cols-5 gap-8">
             {/* left */}
             <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -35,9 +36,9 @@ const Contact: FC = () => {
                   />
                 </div>
                 <div>
-                  <h2 className="py-2">{t('contactFullName')}</h2>
-                  <p>Front-End Developer</p>
-                  <p className="py-4">{t('contactFullNameDescription')}</p>
+                  <TextColorH2 className="py-2">{t('contactFullName')}</TextColorH2>
+                  <TextColorP>Front-End Developer</TextColorP>
+                  <TextColorP className="py-4">{t('contactFullNameDescription')}</TextColorP>
                 </div>
                 <div>
                   <p className="uppercase pt-8 text-[#5651e5]">{t('contactWithMe')}</p>
@@ -75,7 +76,9 @@ const Contact: FC = () => {
                   encType="multipart/form-data">
                   <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2">{t('contactName')}</label>
+                      <TextColorLabel className="uppercase text-sm py-2">
+                        {t('contactName')}
+                      </TextColorLabel>
                       <input
                         className="border-2 rounded-lg p-3 flex border-gray-300"
                         type="text"
@@ -83,7 +86,9 @@ const Contact: FC = () => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2">{t('contactNumber')}</label>
+                      <TextColorLabel className="uppercase text-sm py-2">
+                        {t('contactNumber')}
+                      </TextColorLabel>
                       <input
                         className="border-2 rounded-lg p-3 flex border-gray-300"
                         type="text"
@@ -92,7 +97,9 @@ const Contact: FC = () => {
                     </div>
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">{t('contactEmail')}</label>
+                    <TextColorLabel className="uppercase text-sm py-2">
+                      {t('contactEmail')}
+                    </TextColorLabel>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="email"
@@ -100,7 +107,9 @@ const Contact: FC = () => {
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">{t('contactSubject')}</label>
+                    <TextColorLabel className="uppercase text-sm py-2">
+                      {t('contactSubject')}
+                    </TextColorLabel>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
@@ -108,7 +117,9 @@ const Contact: FC = () => {
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">{t('contactMessage')}</label>
+                    <TextColorLabel className="uppercase text-sm py-2">
+                      {t('contactMessage')}
+                    </TextColorLabel>
                     <textarea
                       className="border-2 rounded-lg p-3 border-gray-300"
                       name="message"></textarea>
@@ -128,3 +139,13 @@ const Contact: FC = () => {
 };
 
 export default Contact;
+
+const TextColorH2 = styled.h2`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorP = styled.p`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorLabel = styled.label`
+  color: ${(props) => props.theme.textColor};
+`;

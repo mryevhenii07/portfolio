@@ -6,6 +6,7 @@ import AboutImg from '../assets/iam.jpg';
 import InstagrammImg from '../assets/Instagram.png';
 import FacebookImg from '../assets/Facebook.png';
 import TwiterImg from '../assets/twit.png';
+import styled from 'styled-components';
 
 const About: FC = () => {
   const { t } = useTranslation();
@@ -14,10 +15,10 @@ const About: FC = () => {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">{t('about')}</p>
-          <h2 className="py-4">{t('aboutWho')}</h2>
-          <p className="py-2 text-gray-600">{t('aboutIAm')}</p>
-          <p className="py-2 text-gray-600">{t('aboutFirstDescription')}</p>
-          <p className="py-2 text-gray-600">{t('aboutSecondDescription')}</p>
+          <TextColorH2 className="py-4">{t('aboutWho')}</TextColorH2>
+          <TextColorP className="py-2 text-gray-600">{t('aboutIAm')}</TextColorP>
+          <TextColorP className="py-2 text-gray-600">{t('aboutFirstDescription')}</TextColorP>
+          <TextColorP className="py-2 text-gray-600">{t('aboutSecondDescription')}</TextColorP>
         </div>
 
         <div className={s.container}>
@@ -39,12 +40,16 @@ const About: FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img src={AboutImg} alt="img" />
-        </div> */}
       </div>
     </div>
   );
 };
 
 export default About;
+
+const TextColorP = styled.p`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorH2 = styled.h2`
+  color: ${(props) => props.theme.textColor};
+`;

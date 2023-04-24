@@ -1,6 +1,6 @@
 
 .App{
-    background: linear-gradient(90deg, #f6f7f7, #d9f3e3);
+    /* background: linear-gradient(90deg, #f6f7f7, #d9f3e3); */
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
 }

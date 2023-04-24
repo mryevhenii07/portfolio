@@ -3,3 +3,8 @@ export interface TranslationResources {
     [key: string]: string;
   };
 }
+
+export interface Theme {
+  backgroundColor: string;
+  textColor: string;
+}

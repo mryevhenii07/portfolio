@@ -16,7 +16,14 @@ display: none;
   width: 25px; overflow: hidden;
   height: 25px;
   cursor: pointer;
+  margin-left: 20px;
 }
+
+.wrapRightBlock{
+  display: flex;
+  align-items: center;
+}
+
 
 .wrapperBtn:hover{
     transform: scale(1.1);

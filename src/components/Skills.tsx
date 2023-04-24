@@ -24,6 +24,7 @@ import WebpackImg from '../assets/skills/webpack.png';
 import BootstrapImg from '../assets/skills/bootstrap.png';
 import FormikImg from '../assets/skills/formik.png';
 import ViteImg from '../assets/skills/Vitejs.png';
+import styled from 'styled-components';
 
 const Skills: FC = () => {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ const Skills: FC = () => {
                 <img src={HtmlImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <TextColorH3>HTML</TextColorH3>
               </div>
             </div>
           </div>
@@ -49,7 +50,7 @@ const Skills: FC = () => {
                 <img src={CssImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
+                <TextColorH3>CSS</TextColorH3>
               </div>
             </div>
           </div>
@@ -59,7 +60,7 @@ const Skills: FC = () => {
                 <img src={TailwindImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
+                <TextColorH3>Tailwind</TextColorH3>
               </div>
             </div>
           </div>
@@ -69,7 +70,7 @@ const Skills: FC = () => {
                 <img src={StyledComponentsImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>StyledComponents</h3>
+                <TextColorH3>StyledComponents</TextColorH3>
               </div>
             </div>
           </div>
@@ -79,7 +80,7 @@ const Skills: FC = () => {
                 <img src={SassImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>SASS</h3>
+                <TextColorH3>SASS</TextColorH3>
               </div>
             </div>
           </div>
@@ -89,7 +90,7 @@ const Skills: FC = () => {
                 <img src={BootstrapImg} alt="img" width="94" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Bootstrap-react@4</h3>
+                <TextColorH3>Bootstrap-react@4</TextColorH3>
               </div>
             </div>
           </div>
@@ -99,7 +100,7 @@ const Skills: FC = () => {
                 <img src={JsImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Java Script</h3>
+                <TextColorH3>Java Script</TextColorH3>
               </div>
             </div>
           </div>
@@ -109,7 +110,7 @@ const Skills: FC = () => {
                 <img src={ReactImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>REACT</h3>
+                <TextColorH3>REACT</TextColorH3>
               </div>
             </div>
           </div>
@@ -119,7 +120,7 @@ const Skills: FC = () => {
                 <img src={TypeScriptImg} alt="img" width="114" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>TypeScript</h3>
+                <TextColorH3>TypeScript</TextColorH3>
               </div>
             </div>
           </div>
@@ -129,7 +130,7 @@ const Skills: FC = () => {
                 <img src={NextJsImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>NEXT.js</h3>
+                <TextColorH3>NEXT.js</TextColorH3>
               </div>
             </div>
           </div>
@@ -139,7 +140,7 @@ const Skills: FC = () => {
                 <img src={ReduxImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Redux-toolkit</h3>
+                <TextColorH3>Redux-toolkit</TextColorH3>
               </div>
             </div>
           </div>
@@ -149,7 +150,7 @@ const Skills: FC = () => {
                 <img src={GitHubImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>GitHub</h3>
+                <TextColorH3>GitHub</TextColorH3>
               </div>
             </div>
           </div>
@@ -159,7 +160,7 @@ const Skills: FC = () => {
                 <img src={FirebaseImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Firebase</h3>
+                <TextColorH3>Firebase</TextColorH3>
               </div>
             </div>
           </div>
@@ -169,7 +170,7 @@ const Skills: FC = () => {
                 <img src={HookImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>React-Hook-Form</h3>
+                <TextColorH3>React-Hook-Form</TextColorH3>
               </div>
             </div>
           </div>
@@ -179,7 +180,7 @@ const Skills: FC = () => {
                 <img src={FormikImg} alt="img" width="114" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Formik Yup</h3>
+                <TextColorH3>Formik Yup</TextColorH3>
               </div>
             </div>
           </div>
@@ -189,7 +190,7 @@ const Skills: FC = () => {
                 <img src={MaterialUiImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Material-Ui</h3>
+                <TextColorH3>Material-Ui</TextColorH3>
               </div>
             </div>
           </div>
@@ -199,7 +200,7 @@ const Skills: FC = () => {
                 <img src={WebpackImg} alt="img" width="124" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Webpack</h3>
+                <TextColorH3>Webpack</TextColorH3>
               </div>
             </div>
           </div>
@@ -209,7 +210,7 @@ const Skills: FC = () => {
                 <img src={ViteImg} alt="img" width="60" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Vite</h3>
+                <TextColorH3>Vite</TextColorH3>
               </div>
             </div>
           </div>
@@ -219,7 +220,7 @@ const Skills: FC = () => {
                 <img src={Restapi} alt="img" width="104" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Rest Api</h3>
+                <TextColorH3>Rest Api</TextColorH3>
               </div>
             </div>
           </div>
@@ -229,7 +230,7 @@ const Skills: FC = () => {
                 <img src={AgileImg} alt="img" width="84" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Agile/Scrum</h3>
+                <TextColorH3>Agile/Scrum</TextColorH3>
               </div>
             </div>
           </div>
@@ -239,7 +240,7 @@ const Skills: FC = () => {
                 <img src={FigmaImg} alt="img" width="114" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Figma</h3>
+                <TextColorH3>Figma</TextColorH3>
               </div>
             </div>
           </div>
@@ -249,7 +250,7 @@ const Skills: FC = () => {
                 <img src={TrelloImg} alt="img" width="94" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Trello</h3>
+                <TextColorH3>Trello</TextColorH3>
               </div>
             </div>
           </div>
@@ -259,7 +260,7 @@ const Skills: FC = () => {
                 <img src={SolidImg} alt="img" width="94" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>SOLID</h3>
+                <TextColorH3>SOLID</TextColorH3>
               </div>
             </div>
           </div>
@@ -270,3 +271,7 @@ const Skills: FC = () => {
 };
 
 export default Skills;
+
+const TextColorH3 = styled.h3`
+  color: ${(props) => props.theme.textColor};
+`;

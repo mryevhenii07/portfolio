@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import PropertyImg from '../assets/project/cryptobg.png';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 const Crypto: FC = () => {
   const { t } = useTranslation();
@@ -19,15 +20,15 @@ const Crypto: FC = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>{t('pagesProject')}</p>
-          <h2> {t('pagesOverview')}</h2>
-          <p>{t('pagesDescriptionCrypto')}</p>
-          <p>
+          <TextColorP>{t('pagesProject')}</TextColorP>
+          <TextColorH2> {t('pagesOverview')}</TextColorH2>
+          <TextColorP>{t('pagesDescriptionCrypto')}</TextColorP>
+          <TextColorP>
             API took from{' '}
             <a className="front-bold underline" href="https://www.coingecko.com/">
               Coingecko
             </a>
-          </p>
+          </TextColorP>
           <a
             href="https://mryevhenii07.github.io/crypta-firebase/"
             target="_blank"
@@ -40,31 +41,31 @@ const Crypto: FC = () => {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">{t('pagesTechnologies')}</p>
+            <TextColorP className="text-center font-bold pb-2">{t('pagesTechnologies')}</TextColorP>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> HTML
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              </TextColorP>
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> TailwindCSS
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              </TextColorP>
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Java Script
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              </TextColorP>
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              </TextColorP>
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React-Router-Dom
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              </TextColorP>
+              <TextColorP className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
+              </TextColorP>
             </div>
           </div>
         </div>
         <Link to="/portfolio">
-          <p className="underline cursor-pointer">{t('pageBack')}</p>
+          <TextColorP className="underline cursor-pointer">{t('pageBack')}</TextColorP>
         </Link>
       </div>
     </div>
@@ -72,3 +73,10 @@ const Crypto: FC = () => {
 };
 
 export default Crypto;
+
+const TextColorP = styled.p`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorH2 = styled.h2`
+  color: ${(props) => props.theme.textColor};
+`;

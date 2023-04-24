@@ -25,15 +25,21 @@ const Main: FC = () => {
         ) : (
           <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div>
-              <p className="uppercase text-sm tracking-widest text-gray-600">{t('build')}</p>
+              <TextColor className="uppercase text-sm tracking-widest text-gray-600">
+                {t('build')}
+              </TextColor>
 
-              <h1 className="py-4 text-gray-700">
+              <TextColorMainHi className="py-4 text-gray-700">
                 {t('mainHi')} <span className="text-[#5651e5]">{t('mainName')}</span>
-              </h1>
-              <h2 className="py-2 text-gray-700">A Front-End Developer</h2>
+              </TextColorMainHi>
+              <TextColorFronEnd className="py-2 text-gray-700">
+                A Front-End Developer
+              </TextColorFronEnd>
 
-              <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">{t('mainText')}</p>
-              <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+              <TextColor className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
+                {t('mainText')}
+              </TextColor>
+              <TextColorImg className="flex items-center justify-between max-w-[330px] m-auto py-4">
                 <a
                   href="https://www.linkedin.com/in/yevhenii-peredrii-a069a7223/"
                   target="_blank"
@@ -48,16 +54,13 @@ const Main: FC = () => {
                   </div>
                 </a>
                 <ModalEmail />
-                {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail size={24} />
-                </div> */}
 
                 <div
                   onClick={handleOpen}
                   className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaTelegram size={28} />
                 </div>
-              </div>
+              </TextColorImg>
             </div>
           </div>
         )}
@@ -67,3 +70,15 @@ const Main: FC = () => {
 };
 
 export default Main;
+const TextColor = styled.p`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorMainHi = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorFronEnd = styled.h2`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorImg = styled.div`
+  color: ${(props) => props.theme.textColor};
+`;
