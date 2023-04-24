@@ -2,41 +2,40 @@ button .btn{
 display: none;
 }
 
-
-
 .img{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
-.img:last-child{
-    margin-left: 10px;
+.wrapperBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 25px; overflow: hidden;
+  height: 25px;
+  cursor: pointer;
 }
 
-.img:hover{
+.wrapperBtn:hover{
     transform: scale(1.1);
 }
-
 
 .wrap{
     padding:5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .iAm{
     color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-
 .container {
     color: #e5e5e5;
     font-size: 30px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,23 +49,18 @@ display: none;
   
   .animation > div > div {
     padding: 0 12px;
-    /* height:38px; */
-
     margin-bottom: 46px;
     display:inline-block;
-    /* display: flex; */
   }
   
   .animation div:first-child {
     animation: text-animation 8s infinite;
   }
   
-
   .first  div{
     color: #5651e5;
     font-weight: bold;
     font-size: 20px;
-    
   }
 
   .second  div {
@@ -79,7 +73,6 @@ display: none;
     color: #5651e5;
     font-weight: bold;
     font-size: 20px;
-    
   }
   
   @keyframes text-animation {

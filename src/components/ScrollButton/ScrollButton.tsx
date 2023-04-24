@@ -33,7 +33,7 @@ const ScrollButton: FC = () => {
   return (
     <div className={`${s.scrollBtn} ${isVisible ? s.show : s.hide}`}>
       <div className={s.button} onClick={scrollToTop} title={t('scrollUp')}>
-        <FaArrowCircleUp />
+        <FaArrowCircleUp size={20} />
       </div>
     </div>
   );

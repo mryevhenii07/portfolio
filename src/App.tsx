@@ -12,7 +12,7 @@ import GitOnline from './pages/gitonline';
 import EventParty from './pages/event';
 import Crypto from './pages/crypto';
 import Popup from './components/popup/Popup';
-import ScrollButton from './ScrollButton/ScrollButton';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 
 const App: FC = () => {
   const [popup, setPopup] = useState(false);

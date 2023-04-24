@@ -11,6 +11,8 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         modalEmail: 'The text is copied to the clipboard.',
+        popup: 'We all unite for Victory!',
+        popupLink: 'Donate to the BF "Return Alive"',
         scrollUp: 'Go to top',
         build: 'LETS BUILD SOMETHING TOGETHER',
         mainText:
@@ -71,6 +73,8 @@ i18n.use(initReactI18next).init({
     ua: {
       translation: {
         modalEmail: 'Текст скопійовано в буфер обміну',
+        popup: 'Текст скопійовано в буфер обміну',
+        popupLink: 'Задонатити в БФ "Повернись Живим"',
         scrollUp: 'Перейти вгору',
         build: 'ДАВАЙТЕ ЩОСЬ СТВОРЮВАТИ РАЗОМ',
         mainText:
