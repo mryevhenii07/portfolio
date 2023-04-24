@@ -1,7 +1,6 @@
 import { useState, FC } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+
 import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Img from '../assets/contact.jpg';
 import Modal from './modal/modalTelegram/modal';
@@ -17,7 +16,8 @@ const Contact: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="#contact" className="w-full lg:h-screen">
+    <div id="#contact" className="w-full  ">
+      {/* <div id="#contact" className="w-full lg:h-screen "> */}
       {!open ? (
         <Modal onClose={onClose} />
       ) : (
@@ -42,7 +42,7 @@ const Contact: FC = () => {
                 </div>
                 <div>
                   <p className="uppercase pt-8 text-[#5651e5]">{t('contactWithMe')}</p>
-                  <div className="flex items-center justify-between py-4">
+                  <TextColorDiv className="flex items-center justify-between py-4">
                     <a
                       href="https://www.linkedin.com/in/yevhenii-peredrii-a069a7223/"
                       target="_blank"
@@ -62,7 +62,7 @@ const Contact: FC = () => {
                       className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaTelegram size={28} />
                     </div>
-                  </div>
+                  </TextColorDiv>
                 </div>
               </div>
             </div>
@@ -147,5 +147,8 @@ const TextColorP = styled.p`
   color: ${(props) => props.theme.textColor};
 `;
 const TextColorLabel = styled.label`
+  color: ${(props) => props.theme.textColor};
+`;
+const TextColorDiv = styled.div`
   color: ${(props) => props.theme.textColor};
 `;

@@ -29,7 +29,7 @@
 }
 
 .input:checked + .label{
-    background: #242424;
+    background: #757272;
 }
 
 .input:checked + .label::after{
