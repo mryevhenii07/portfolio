@@ -38,8 +38,7 @@ const NavBar: FC<Props> = ({ handleToggle }) => {
   };
 
   return (
-    <StyledTheme
-      className={shadow ? 'fixed w-full h-30 shadow-xl z-[100]' : 'fixed w-full h-30 z-[100]'}>
+    <div className={shadow ? 'fixed w-full h-30 shadow-xl z-[100] ' : 'fixed w-full h-30 z-[100]'}>
       <div className={s.wrap}>
         <div className={s.container}>
           <section className={s.animation}>
@@ -65,12 +64,12 @@ const NavBar: FC<Props> = ({ handleToggle }) => {
           </div>
         </div>
       </div>
-    </StyledTheme>
+    </div>
   );
 };
 
 export default NavBar;
 
-const StyledTheme = styled.div`
-  background-color: ${(props) => props.theme.backgroundColor};
-`;
+// const StyledTheme = styled.div`
+//   background-color: ${(props) => props.theme.backgroundColor};
+// `;

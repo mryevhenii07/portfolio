@@ -27,10 +27,12 @@ const EventParty = () => {
           <TextColorP>{t('pagesDescriptionEvent')}</TextColorP>
 
           <a href="https://mryevhenii07.github.io/event-project/" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8">{t('pagesDemo')}</button>
+            <button className="px-8 py-2 mt-4 mr-8 shadow-lg shadow-gray-400">
+              {t('pagesDemo')}
+            </button>
           </a>
           <a href="https://github.com/mryevhenii07/event-project">
-            <button className="px-8 py-2 mt-4">{t('pagesCode')}</button>
+            <button className="px-8 py-2 mt-4 shadow-lg shadow-gray-400">{t('pagesCode')}</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">

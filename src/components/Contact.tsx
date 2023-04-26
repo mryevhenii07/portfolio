@@ -1,12 +1,11 @@
 import { useState, FC } from 'react';
-
 import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa';
+import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 import Img from '../assets/contact.jpg';
 import Modal from './modal/modalTelegram/modal';
-import { useTranslation } from 'react-i18next';
 import ModalEmail from './modal/modalEmail/modalEmail';
-import styled from 'styled-components';
 
 const Contact: FC = () => {
   const [open, setOpen] = useState(true);

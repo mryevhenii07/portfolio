@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 import s from '../variables/about.module.css';
 import AboutImg from '../assets/iam.jpg';
 import InstagrammImg from '../assets/Instagram.png';
 import FacebookImg from '../assets/Facebook.png';
 import TwiterImg from '../assets/twit.png';
-import styled from 'styled-components';
 
 const About: FC = () => {
   const { t } = useTranslation();
