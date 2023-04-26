@@ -1,7 +1,6 @@
 .wrap{
     position: relative;
     padding: 10px;
-    margin: 100px auto;
     width: 340px;
     height: 400px;
     position:fixed;
@@ -11,8 +10,14 @@
     z-index: 999;
     background-color: #fff;
     border-radius: 8px;
+    opacity: 0;
+    animation: ani 1s forwards;
 }
 
+@keyframes ani{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 .wrapBody{
     position:fixed;
     background-color: rgba(150, 150, 150, 0.5);
