@@ -6,10 +6,8 @@ import UkImg from '../assets/uk.jpg';
 import s from '../variables/navbar.module.css';
 import SwitchTheme from './SwitchTheme/SwitchTheme';
 
-import styled from 'styled-components';
-
 interface Props {
-  handleToggle: (aa: any) => void;
+  handleToggle: (bool: boolean) => void;
 }
 
 const NavBar: FC<Props> = ({ handleToggle }) => {
@@ -69,7 +67,3 @@ const NavBar: FC<Props> = ({ handleToggle }) => {
 };
 
 export default NavBar;
-
-// const StyledTheme = styled.div`
-//   background-color: ${(props) => props.theme.backgroundColor};
-// `;

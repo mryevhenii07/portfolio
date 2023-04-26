@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 import HtmlImg from '../assets/skills/html.png';
 import CssImg from '../assets/skills/css.png';
@@ -18,13 +19,11 @@ import TypeScriptImg from '../assets/skills/typescript.png';
 import StyledComponentsImg from '../assets/skills/styledcomponents.png';
 import TrelloImg from '../assets/skills/trello.png';
 import FigmaImg from '../assets/skills/figma.png';
-import SolidImg from '../assets/skills/solid.png';
 import Restapi from '../assets/skills/restapi.png';
 import WebpackImg from '../assets/skills/webpack.png';
 import BootstrapImg from '../assets/skills/bootstrap.png';
 import FormikImg from '../assets/skills/formik.png';
 import ViteImg from '../assets/skills/Vitejs.png';
-import styled from 'styled-components';
 
 const Skills: FC = () => {
   const { t } = useTranslation();

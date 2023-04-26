@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import SearchEvenImg from '../assets/project/search-even.png';
@@ -9,7 +9,7 @@ import CryptoImg from '../assets/project/crypto.png';
 import WalletImg from '../assets/project/wallet.png';
 import ProjectItem from './ProjectItem';
 
-const Projects = () => {
+const Projects: FC = () => {
   const { t } = useTranslation();
   return (
     <div id="projects" className="w-full ">

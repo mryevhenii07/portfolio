@@ -30,7 +30,7 @@ const App: FC = () => {
     const handlePopup = () => {
       setTimeout(() => {
         setPopup(true);
-      }, 1000);
+      }, 8000);
     };
     handlePopup();
   }, []);
