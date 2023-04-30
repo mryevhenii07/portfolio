@@ -1,13 +1,12 @@
-import React from 'react';
-
+import { FC } from 'react';
+import styled from 'styled-components';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 import PropertyImg from '../assets/project/eventbg.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
 
-const EventParty = () => {
+const EventParty: FC = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full ">
