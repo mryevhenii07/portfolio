@@ -9,7 +9,6 @@
 .container .box{
     width: 320px;
     height: 320px;
-    
 }
 
 .container .box:hover .imgBox{
@@ -18,7 +17,6 @@
 
 .container .box:hover .content{
     transform: translate(0 ,300px );
-    
 }
 
 .content{
@@ -38,7 +36,6 @@
     left: 0;
     z-index: 2;
     transition: all 0.5s ease-in-out;
-
 }
 
 .imgBox img{
@@ -48,9 +45,3 @@
     resize: both;
     border-radius: 8px;
 }
-/* .name{
-    font-size: 18px;
-}
-.position{
-    font-size: 12px;
-} */
