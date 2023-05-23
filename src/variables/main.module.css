@@ -1,18 +1,16 @@
 
-
-.title{position: relative;
+.title{
+    position: relative;
 }
 .alternate{
     display: inline;
     margin-left: 10px;
-    
 }
 .alternate {
     position: absolute;
     width: max-content;
     background-color: #0561EE;
     padding-inline: 10px;
-    /* opacity: 0; */
     transform-origin: 10% 75%;
     animation: rotateWords 9s var(--d) linear infinite;
 }
@@ -34,7 +32,6 @@
         opacity: 0;
         transform: translateY(90px) rotate(10deg);
     }
-
 }
 
 
